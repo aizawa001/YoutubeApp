@@ -13,6 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        //TabBArの文字の色を一括で赤にする
+        UITabBarItem.appearance().setTitleTextAttributes([.font: UIFont.systemFont(ofSize: 9, weight: .bold),.foregroundColor: UIColor.init(red: 230/255, green: 50/255, blue: 50/255, alpha: 1)], for: .normal)
         // Override point for customization after application launch.
         return true
     }
